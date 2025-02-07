@@ -6,18 +6,23 @@ namespace Exercicio1
     {
         static void Main(string[] args)
         {
+            int A, B, Soma;
 
-            Console.Write("Digite um número: ");
-            int N = int.Parse(Console.ReadLine());
+            Console.Write("Digite o primeiro número inteiro: ");
+            while (!int.TryParse(Console.ReadLine(), out A))
+            {
+                Console.Write("Entrada inválida! Digite um número inteiro: ");
+            }
 
-            if (N < 0)
+            Console.Write("Digite o segundo número inteiro: ");
+            while (!int.TryParse(Console.ReadLine(), out B))
             {
-                Console.WriteLine("NEGATIVO");
+                Console.Write("Entrada inválida! Digite um número inteiro: ");
             }
-            else
-            {
-                Console.WriteLine("NAO NEGATIVO");
-            }
+
+            Soma = A + B;
+
+            Console.WriteLine($"Soma = {Soma}");
         }
     }
 }
