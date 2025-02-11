@@ -20,7 +20,7 @@ namespace Exercicio1
                 if (senha == senhaCorreta)
                 {
                     Console.WriteLine("Acesso Permitido! Bem-vindo ao sistema.");
-                    break; // Sai do loop quando a senha estiver correta
+                    break; 
                 }
 
                 Console.WriteLine("Senha Invalida. Tente novamente.");
