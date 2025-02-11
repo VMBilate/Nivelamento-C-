@@ -20,7 +20,7 @@ namespace Exercicio3
 
                 if (codigo == 4)
                 {
-                    break; // Sai do loop quando o código for 4
+                    break;
                 }
 
                 switch (codigo)
@@ -36,7 +36,7 @@ namespace Exercicio3
                         break;
                     default:
                         Console.WriteLine("Código inválido! Tente novamente.");
-                        continue; // Pula para a próxima iteração do loop
+                        continue;
                 }
             }
 
